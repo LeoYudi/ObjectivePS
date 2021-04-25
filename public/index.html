@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Gourmet</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="main-window">
+        <p class="window-text"> Pense em um prato que gosta </p>
+        <a href="" class="button start">
+          <div>OK</div>
+        </a>
+      </div>
+
+      <div class="modal-background modal-main hidden">
+        <div class="modal-window modal-question hidden">
+
+          <p class="window-text question">O prato que você pensou é {var} ?</p>
+
+          <div class="buttons-div">
+            <a href="" class="button yes">
+              <div>Sim</div>
+            </a>
+            <a href="" class="button no">
+              <div>Não</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="modal-window modal-food hidden">
+          <p class="window-text">Qual prato você pensou ?</p>
+
+          <div class="input-div">
+            <input type="text">
+          </div>
+
+          <div class="buttons-div">
+            <a href="" class="button new-food">
+              <div>Ok</div>
+            </a>
+            <a href="" class="button restart">
+              <div>Cancelar</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="modal-window modal-trait hidden">
+          <p class="window-text trait">{food1} é ___ mas {food2} não.</p>
+
+          <div class="input-div">
+            <input type="text">
+          </div>
+
+          <div class="buttons-div">
+            <a href="" class="button new-trait">
+              <div>Ok</div>
+            </a>
+            <a href="" class="button restart">
+              <div>Cancelar</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="modal-window modal-done hidden">
+          <p class="window-text">Acertei de novo!</p>
+          <a href="" class="button restart">
+            <div>Recomeçar</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+
+</html>
